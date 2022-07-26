@@ -1,0 +1,372 @@
+*{margin: 0;
+padding: 0;
+width: auto;
+height: auto;
+box-sizing: BORDER-BOX;
+overflow: hidden;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+
+body{
+    font-family: "open sans" , sans-serif;
+    display: absolute;
+}
+
+.contenedor{
+ padding: 60px 0;
+ width: 80%;
+ max-width: 1000px;
+ margin: auto;
+
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: center;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 600px;
+    background: #DA4453;
+      /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(300, 61%, 33%, 0.658), hsla(354, 52%, 33%, 0.315)), url(../imagenes/beneficios-de-la-logistica-eficiente.jpg);
+      /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(300, 61%, 33%, 0.455), hsla(353, 6%, 72%, 0.443)), url(../imagenes/beneficios-de-la-logistica-eficiente.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}   
+    
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* nota con lo de arriba el texto se pondra al lado del otro para evitar ello ponder columns */
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+ font-size: 50px;
+ color: #fff;
+}   
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+header .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* intentare que sea adaptable para moviles */
+.contenedor-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+  
+  /* nota con lo de arriba e l texto se pondra al lado del otro para evitar ello ponder columns */
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.contenedor-sobre-nosotros{
+    width: 60rem;
+}
+
+.contenido-texto h3 span{
+    background: #4d0686 ;
+    color: blanchedalmond;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+    
+}
+.contenido-sobre-nosotros h2{
+    font-size: 30px;
+    font-weight: 300px;
+    color: #fff;    
+    position: center;
+}
+
+.contenido-texto{
+    padding: 0px 10px 40px;
+    font-weight: 300px;
+    width: 100%;
+}
+
+.contenido-texto p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+
+}
+
+
+/*GALERIA  */
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+
+
+.imagen-port{
+    width: 20%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    height: 20%; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hove-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hcla(273,91%,27%,0.7);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hove-galeria img{
+ width: 24%;
+}
+
+.hove-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hove-galeria{
+    transform: scale(1);
+}
+
+/* PARA LOS COMENTARIOS DE LOS CLIENTES */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+ background: #4d0686;
+ display: flex;
+ width: 36%;
+ height: 200PX;
+ align-items: center;
+ justify-content: space-evenly;
+ border-radius: 5px;
+ box-shadow: 0 0 0 6px rgba(0,0,0,0.6);
+}
+
+.cards .card img{
+    width: 100PX;
+    height: 100PX;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .CONTENIDO-TEXTO-CARD{
+    width: 70%;
+    color: #fff;
+    object-fit: cover;
+
+}
+
+.cards .card > .CONTENIDO-TEXTO-CARD p{
+ font-weight: 300;
+ padding-top: 5px;
+
+}
+/* footer ------------------------------------------------------------- */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;     
+}
+
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.conten-foo{
+    text-align: center;
+}
+
+.conten-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+
+.conten-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20 0 0 0;
+    color: #9e9797;
+
+}
+
+/* convertir todo a movil */
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center ;
+    }
+    .pepe{
+        display: none;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-texto{
+        width: 100%;
+    }
+    .imagen-about-us{
+        width: 0%;
+    }
+    /* galeria */
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* clientes */
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .contenedor{
+
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .sobre-nosotros{
+        width: 100%;
+    }
+
+    
+    
+    .contenido-texto {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+    
+    .contenido-texto div{
+     
+        width: 500px;
+        box-sizing: border-box;
+    }
+    .contenido-texto p{
+    width: 90%;
+   
+    
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   /* ver */
+    .portafolio{
+        width: auto;
+        margin: 0 auto;
+    
+    }
+     
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .imagen-port{
+        width: 30%;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+
+}
